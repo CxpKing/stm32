@@ -21,6 +21,8 @@
 #include "main.h"
 #include "gpio.h"
 #include "stdio.h"
+#include "usart.h"
+#include "debug.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -86,10 +88,11 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+	MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
-
+  DEBUG_INFO("Enter test num is  %d\r\n",100);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
