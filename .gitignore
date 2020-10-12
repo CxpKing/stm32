@@ -2,7 +2,7 @@
 *.d
 *.crf
 *.o
-*.build_log.htm
+*.htm
 *.axf
 *.lnp
 *.map
@@ -11,4 +11,3 @@
 *.lst
 *.uvguix.*
 *.dbgconf
-*.htm
